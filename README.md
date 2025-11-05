@@ -73,7 +73,7 @@ Administrators can manage and maintain student data records through various func
 ```
 UniApp_CLI/
 │
-├── main.py                           # Main CLI entry point (University System)
+├── main.py                           # Main CLI entry point
 ├── student_controller.py             # Handles Student's operations
 ├── subject_controller.py             # 
 ├── admin_controller                  # Handles Admin's operations
