@@ -75,8 +75,9 @@ UniApp_CLI/
 │
 ├── main.py                           # Main CLI entry point (University System)
 ├── student_controller.py             # Handles Register / Login / Student operations
+├── subject_controller.py             # 
 ├── admin_controller                  # 
-├── admin_system.py                   # 
+├── admin_system.py                   # Handle admin's functions
 ├── admin_system_implementation.py    # Extended admin functions (if any)
 │
 ├── services/                         # Service layer for data and validation
