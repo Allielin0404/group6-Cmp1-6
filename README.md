@@ -77,14 +77,14 @@ UniApp_CLI/
 ├── student_controller.py             # Handles Register / Login / Student operations
 ├── subject_controller.py             # 
 ├── admin_controller                  # 
-├── admin_system.py                   # Handle admin's functions
-├── admin_system_implementation.py    # Extended admin functions (if any)
+├── admin_system.py                   # 
+├── admin_system_implementation.py    # 
 │
 ├── services/                         # Service layer for data and validation
 │   ├── store.py                      # Handles read/write operations for students.data
 │   └── validators.py                 # Regex input validation (email, password rules)
 │
-├── gui.py                            # Tkinter-based GUI (Login + Enrolment)
+├── gui.py                            # Tkinter-based GUI
 │
 ├── students.data                     # Shared JSON data file (auto-created if missing)
 │
