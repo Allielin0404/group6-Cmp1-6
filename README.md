@@ -86,9 +86,9 @@ UniApp_CLI/
 │
 ├── gui.py                            # Tkinter-based GUI
 │
-├── students.data                     # Shared JSON data file (auto-created if missing)
+├── students.data                     # Shared JSON data file (auto-created)
 │
-└── README.md                         # Project documentation (this file) 
+└── README.md                         # Project documentation
 ```
 
 ---
