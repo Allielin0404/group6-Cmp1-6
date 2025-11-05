@@ -73,18 +73,21 @@ Administrators can manage and maintain student data records through various func
 ```
 UniApp_CLI/
 │
-├── main.py                  # Main CLI entry point (University System)
-├── student_controller.py    # Handles Register / Login / Student operations
+├── main.py                           # Main CLI entry point (University System)
+├── student_controller.py             # Handles Register / Login / Student operations
+├── admin_controller                  # 
+├── admin_system.py                   # 
+├── admin_system_implementation.py    # Extended admin functions (if any)
 │
-├── services/                # Service layer for data and validation
-│   ├── store.py             # Handles read/write operations for students.data
-│   └── validators.py        # Regex input validation (email, password rules)
+├── services/                         # Service layer for data and validation
+│   ├── store.py                      # Handles read/write operations for students.data
+│   └── validators.py                 # Regex input validation (email, password rules)
 │
-├── gui.py                   # Tkinter-based GUI (Login + Enrolment)
+├── gui.py                            # Tkinter-based GUI (Login + Enrolment)
 │
-├── students.data            # Shared JSON data file (auto-created if missing)
+├── students.data                     # Shared JSON data file (auto-created if missing)
 │
-└── README.md                # Project documentation (this file) 
+└── README.md                         # Project documentation (this file) 
 ```
 
 ---
