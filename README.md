@@ -41,8 +41,6 @@ Administrators can manage and maintain student data records through various func
 - **R** -> Remove a specific student
 - **S** -> Show list of all students
 
----
-
 ## System Requirements
 - **Python version:** 3.13 or above  
 - **Operating System:** Windows, macOS, or Linux  
@@ -86,6 +84,8 @@ Administrators can manage and maintain student data records through various func
 ├── gui.py                -> Tkinter-based GUI (Login + Enrolment)
 │
 └── README.md              -> Documentation
+
+---
 
 ## How to Run
 **CLI**
