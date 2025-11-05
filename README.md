@@ -27,19 +27,19 @@ Administrators can manage and maintain student data records through various func
 ## User Roles
 
 ### Student
-- **R** Register
-- **L** Login
-   - **C** Change password
-   - **E** Enrol a subject
-   - **R** Remove a subject
-   - **S** Show all enrolled subjects
+- **R** -> Register
+- **L** -> Login
+   - **C** -> Change password
+   - **E** -> Enrol a subject
+   - **R** -> Remove a subject
+   - **S** -> Show all enrolled subjects
 
 ### Administrator
-- **C** Clear all student data
-- **G** Group students by grade
-- **P** Categorise students into PASS/FAIL
-- **R** Remove a specific student
-- **S** Show list of all students
+- **C** -> Clear all student data
+- **G** -> Group students by grade
+- **P** -> Categorise students into PASS/FAIL
+- **R** -> Remove a specific student
+- **S** -> Show list of all students
 
 ---
 
