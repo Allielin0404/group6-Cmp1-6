@@ -70,6 +70,7 @@ Administrators can manage and maintain student data records through various func
 
 
 ## File Structure
+```
 UniApp_CLI/
 │
 ├── main.py                  # Main CLI entry point (University System)
@@ -84,6 +85,7 @@ UniApp_CLI/
 ├── students.data            # Shared JSON data file (auto-created if missing)
 │
 └── README.md                # Project documentation (this file) 
+```
 
 ---
 
