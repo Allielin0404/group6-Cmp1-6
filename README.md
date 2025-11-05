@@ -80,7 +80,7 @@ Administrators can manage and maintain student data records through various func
 │   └── validators.py      -> Regex input validation  
 │  
 ├── students.data          -> Shared JSON data file  
-│  
+│ 
 ├── gui.py                -> Tkinter-based GUI (Login + Enrolment)  
 │  
 └── README.md              -> Documentation  
