@@ -68,7 +68,7 @@ def loginStudent():
 
     if user:
         print(Fore.GREEN + f"Login successful. Welcome, {user['name']}.\n")
-        from controllers.subject_controller import subject_menu
+        from subject_controller import subject_menu
         subject_menu(user)
     else:
         print(Fore.RED + "Invalid email or password. Please try again.\n")
