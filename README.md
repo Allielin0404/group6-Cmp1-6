@@ -10,8 +10,8 @@
 - [Team Members](#team-members)
 - [File Structure](#file-structure)
 - [How to Run](#how-to-run)
-- [Test](#test)
-- [Usage Example](#usage-example)
+- [How to Run](#how-to-test)
+- [How to Use](#how-to-use)
 - [Example Data](#example-data)
 
 ---
