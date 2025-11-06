@@ -23,7 +23,7 @@ def student_menu():
 
 
 def _generate_unique_id(existing_ids):
-    # Generate a unique 6-digit student ID (000001–999999)
+    # Randomly generate a unique 6-digit student ID (000001–999999)
     for _ in range(10000): 
         new_id = f"{random.randint(1, 999999):06d}"
         if new_id not in existing_ids:
