@@ -42,7 +42,7 @@ Administrators can manage and maintain student data records through various func
 - **S** - Show list of all students
 
 ## System Requirements
-- **Python version:** 3.13 or above  
+- **Python version:** 3.10 or above  
 - **Operating System:** Windows, macOS, or Linux  
 - **Libraries** json, tkinter, random, colorama
 
