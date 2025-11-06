@@ -50,7 +50,7 @@ def group_students():
         "D": [],
         "C": [],
         "P": [],
-        "F": []
+        "Z": []
     }
     
     # Group students by average grade
@@ -62,7 +62,7 @@ def group_students():
     
     # Display grouped students
     print("Grade Grouping")
-    for grade in ["HD", "D", "C", "P", "F"]:
+    for grade in ["HD", "D", "C", "P", "Z"]:
         if grade_groups[grade]:
             print(f"{grade} --> ", end="")
             for student in grade_groups[grade]:
