@@ -17,7 +17,7 @@
 ---
 
 ## Project Overview
-This project is a Python-based university enrolment system that provides both a Command-Line Interface (CLI) and a Graphical User Interface (GUI).  
+This project is a Python-based university enrolment system that provides both a Command-Line Interface (CLI) (full functions) and a Graphical User Interface (GUI) (partly functions).  
 
 Students can register, log in, manage their accounts, and enrol or remove subjects.  
 Administrators can manage and maintain student data records through various functions.
