@@ -7,7 +7,7 @@ def ensure_file():
     if not DATA_FILE.exists():
         DATA_FILE.write_text("[]", encoding="utf-8")
 
-'''read student data'''
+# read student data
 def load_all():
     ensure_file()
     try:
@@ -16,7 +16,7 @@ def load_all():
         print("[error] read failed:", e)
         return []
 
-'''rewrite and save, return Ture'''
+# rewrite and save, return Ture
 def save_all(students):
     try:
         DATA_FILE.write_text(
