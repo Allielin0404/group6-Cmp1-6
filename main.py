@@ -1,5 +1,5 @@
-from controllers.student_controller import student_menu
-from controllers.admin_controller import admin_menu
+from student_controller import student_menu
+from admin_controller import admin_menu
 from colorama import Fore, Style, init
 
 init(autoreset=True)
