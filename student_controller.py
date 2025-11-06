@@ -7,7 +7,7 @@ init(autoreset=True)
 
 def student_menu():
     while True:
-        print(Fore.CYAN + Style.BRIGHT + "Student System Menu (l/r/x): ", end=" ")
+        print(Fore.CYAN + Style.BRIGHT + "\nStudent System Menu (l/r/x): ", end=" ")
         choice = input().strip().lower()
 
         if choice == "r":
