@@ -7,10 +7,10 @@
 - [User Roles](#user-roles)
 - [System Requirements](#system-requirements)
 - [Installation & Setup Instructions](#installation--setup-instructions)
-- [Team Members](#team-members)
+- [Team Members](#our-4-team-members)
 - [File Structure](#file-structure)
 - [How to Run](#how-to-run)
-- [How to Run](#how-to-test)
+- [How to Test](#how-to-test)
 - [How to Use](#how-to-use)
 - [Example Data](#example-data)
 
