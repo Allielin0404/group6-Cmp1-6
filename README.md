@@ -91,9 +91,9 @@ UniApp_CLI/
 ---
 
 ## How to Run
-**CLI**
+**CLI**  
 `python main.py`  
-**GUI**
+**GUI**  
 `python gui.py`
 
 ## How to Test
