@@ -114,7 +114,7 @@ def calculate_grade(mark):
     elif mark >= 50:
         return "P"
     else:
-        return "F"
+        return "Z"
 
 
 def update_student_in_file(updated_student):
