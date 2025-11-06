@@ -63,7 +63,7 @@ Administrators can manage and maintain student data records through various func
 ## Our 4 Team Members
 | NAME | SID | Contribution |
 |:----:|:----:|:----|
-|Shelly|25725906|Main Menu & Student Register/Login & Documentation|
+|Shelly|25725906|Main Menu & Student Account System & Documentation|
 |Allie|26061085|Subject Enrolment System|
 |Rainy|26024354|Admin System|
 |Zoeb|25613720|GUI System|
