@@ -1,5 +1,5 @@
-from services.store import load_all, save_all
-from services.validators import is_valid_email, is_valid_password
+from store import load_all, save_all
+from validators import is_valid_email, is_valid_password
 from colorama import Fore, Style, init
 init(autoreset=True)
 
