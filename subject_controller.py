@@ -1,6 +1,6 @@
 import random
-from services.store import load_all, save_all
-from services.validators import is_valid_password
+from store import load_all, save_all
+from validators import is_valid_password
 
 
 def subject_menu(current_student):
