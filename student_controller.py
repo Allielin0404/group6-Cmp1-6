@@ -1,6 +1,7 @@
 from store import load_all, save_all
 from validators import is_valid_email, is_valid_password
 from colorama import Fore, Style, init
+import random
 init(autoreset=True)
 
 
@@ -19,6 +20,15 @@ def student_menu():
             break
         else:
             print(Fore.RED + "Invalid option. Please try again.\n")
+
+
+def _generate_unique_id(existing_ids):
+    # Generate a unique 6-digit student ID (000001–999999)
+    for _ in range(10000): 
+        new_id = f"{random.randint(1, 999999):06d}"
+        if new_id not in existing_ids:
+            return new_id
+    raise RuntimeError("Failed to generate a unique student ID.")
 
 
 def registerStudent():
@@ -42,7 +52,8 @@ def registerStudent():
         print(Fore.RED + "Email already registered.\n")
         return
 
-    new_id = str(len(students) + 1).zfill(6)
+    existing_ids = {s["id"] for s in students}
+    new_id = _generate_unique_id(existing_ids)
 
     students.append({
         "id": new_id,
