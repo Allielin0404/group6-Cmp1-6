@@ -1,11 +1,12 @@
 import random
 from store import load_all, save_all
 from validators import is_valid_password
+from colorama import Fore, Style, init
 
 
 def subject_menu(current_student):
     while True:
-        print("\nStudent Course Menu (c/e/r/s/x):", end=" ")
+        print(Fore.CYAN + Style.BRIGHT +"\nStudent Course Menu (c/e/r/s/x):", end=" ")
         choice = input().strip().lower()
         
         if choice == "c":
@@ -19,12 +20,12 @@ def subject_menu(current_student):
         elif choice == "x":
             break
         else:
-            print("Invalid option, try again.")
+            print(Fore.RED + "Invalid option, try again.")
 
 
 def enrol_subject(student):
     if len(student["subjects"]) >= 4:
-        print("Students are allowed to enrol in 4 subjects only")
+        print(Fore.RED + f"Students are allowed to enrol in 4 subjects only")
         return
     
     while True:
@@ -34,7 +35,7 @@ def enrol_subject(student):
     
     
     if any(s["id"] == subject_id for s in student["subjects"]):
-        print("Already enrolled in this subject")
+        print(Fore.RED + "Already enrolled in this subject")
         return
     
     mark = random.randint(25, 100)
@@ -48,13 +49,13 @@ def enrol_subject(student):
     
     update_student_in_file(student)
     
-    print(f"Enrolling in Subject-{subject_id}")
-    print(f"You are now enrolled in {len(student['subjects'])} out of 4 subjects")
+    print(Fore.YELLOW + f"Enrolling in Subject-{subject_id}")
+    print(Fore.GREEN + f"You are now enrolled in {len(student['subjects'])} out of 4 subjects")
 
 
 def remove_subject(student):
     if not student["subjects"]:
-        print("No subjects to remove")
+        print(Fore.RED + "No subjects to remove")
         return
     
     subject_id = input("Remove by ID: ").strip()
@@ -64,13 +65,13 @@ def remove_subject(student):
     student["subjects"] = [s for s in student["subjects"] if s["id"] != subject_id]
     
     if len(student["subjects"]) == original_count:
-        print("Subject not found in your enrolment")
+        print(Fore.RED + "Subject not found in your enrolment")
         return
     
     update_student_in_file(student)
     
-    print(f"Dropping Subject-{subject_id}")
-    print(f"You are now enrolled in {len(student['subjects'])} out of 4 subjects")
+    print(Fore.YELLOW + f"Dropping Subject-{subject_id}")
+    print(Fore.GREEN + f"You are now enrolled in {len(student['subjects'])} out of 4 subjects")
 
 
 def show_subjects(student):
@@ -89,11 +90,11 @@ def change_password(student):
     confirm_password = input("Confirm Password: ").strip()
     
     if new_password != confirm_password:
-        print("Password does not match - try again")
+        print(Fore.RED + f"Password does not match - try again")
         return
 
     if not is_valid_password(new_password):
-        print("Invalid password format. Must start with uppercase, at least 5 letters, and end with 3+ digits.")
+        print(Fore.RED + "Invalid password format. Must start with uppercase, at least 5 letters, and end with 3+ digits.")
         return
     
 
@@ -101,7 +102,7 @@ def change_password(student):
     
     update_student_in_file(student)
     
-    print("Password changed successfully")
+    print(Fore.GREEN + "Password changed successfully")
 
 
 def calculate_grade(mark):
@@ -114,7 +115,7 @@ def calculate_grade(mark):
     elif mark >= 50:
         return "P"
     else:
-        return "F"
+        return "Z"
 
 
 def update_student_in_file(updated_student):
