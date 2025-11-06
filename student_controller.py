@@ -1,16 +1,15 @@
 from services.store import load_all, save_all
 from services.validators import is_valid_email, is_valid_password
+from colorama import Fore, Style, init
+init(autoreset=True)
 
 
 def student_menu():
     while True:
-        print("\n-----================-----")
-        print("::::: Student System :::::")
-        print("-----================-----")
-        print("\n(R) Register")
-        print("(L) Login")
-        print("(X) Back")
-        choice = input("Student System (l/r/x): ").strip().lower()
+        print(Fore.CYAN + Style.BRIGHT + "\nStudent System Menu")
+        print("(R)Register   (L)Login   (X)Exit")
+
+        choice = input(Fore.CYAN + "Select an option: ").strip().lower()
 
         if choice == "r":
             registerStudent()
@@ -19,27 +18,28 @@ def student_menu():
         elif choice == "x":
             break
         else:
-            print("Invalid option, try again.")
+            print(Fore.RED + "Invalid option. Please try again.\n")
 
 
 def registerStudent():
-    name = input("Name: ").strip()
-    email = input("Email: ").strip()
-    password = input("Password: ").strip()
+    print(Fore.CYAN + "\nStudent Registration")
+    name = input(Fore.WHITE + "Name: ").strip()
+    email = input(Fore.WHITE + "Email: ").strip()
+    password = input(Fore.WHITE + "Password: ").strip()
 
     if not name or not email or not password:
-        print("All fields are required.")
+        print(Fore.RED + "All fields are required.\n")
         return
     if not is_valid_email(email):
-        print("Invalid email format. Must end with @university.com")
+        print(Fore.RED + "Invalid email format. Must end with @university.com\n")
         return
     if not is_valid_password(password):
-        print("Invalid password format. Must start with uppercase, at least 5 letters, and end with 3+ digits.")
+        print(Fore.RED + "Invalid password format. Must start with uppercase, have at least 5 letters, and end with 3+ digits.\n")
         return
 
     students = load_all()
     if any(s["email"] == email for s in students):
-        print("Email already registered.")
+        print(Fore.RED + "Email already registered.\n")
         return
 
     new_id = str(len(students) + 1).zfill(6)
@@ -53,21 +53,22 @@ def registerStudent():
     })
 
     if save_all(students):
-        print(f"Register success. Your ID: {new_id}")
+        print(Fore.GREEN + f"Registration successful. Your Student ID: {new_id}\n")
     else:
-        print("Register failed (write error).")
+        print(Fore.RED + "Registration failed (file write error).\n")
 
 
 def loginStudent():
-    email = input("Email: ").strip()
-    password = input("Password: ").strip()
+    print(Fore.CYAN + "\nStudent Login")
+    email = input(Fore.WHITE + "Email: ").strip()
+    password = input(Fore.WHITE + "Password: ").strip()
 
     students = load_all()
     user = next((s for s in students if s["email"] == email and s["password"] == password), None)
 
     if user:
-        print(f"Login success! Welcome, {user['name']}")
-        from subject_controller import subject_menu
+        print(Fore.GREEN + f"Login successful. Welcome, {user['name']}.\n")
+        from controllers.subject_controller import subject_menu
         subject_menu(user)
     else:
-        print("Invalid email or password.")
+        print(Fore.RED + "Invalid email or password. Please try again.\n")
