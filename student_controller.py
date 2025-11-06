@@ -8,7 +8,7 @@ init(autoreset=True)
 def student_menu():
     while True:
 
-        choice = input(Fore.CYAN + Style.BRIGHT + "\nStudent System Menu (l/r/x): ").strip().lower()
+        choice = input(Fore.CYAN + Style.BRIGHT + "\nStudent System Menu (l/r/x): ", end=" ").strip().lower()
 
         if choice == "r":
             registerStudent()
