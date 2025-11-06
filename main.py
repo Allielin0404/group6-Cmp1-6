@@ -7,7 +7,8 @@ init(autoreset=True)
 def main_menu():
     # Main menu
     while True:
-        choice = input(Fore.CYAN + Style.BRIGHT + "\nUniversity System Menu: (A)dmin (S)tudent or X: ", end=" ").strip().lower()
+        print(Fore.CYAN + Style.BRIGHT + "\nUniversity System Menu: (A)dmin (S)tudent or X: ", end=" ")
+        choice = input().strip().lower()
         
         # Handle choices
         if choice == "a":
