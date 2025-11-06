@@ -1,4 +1,4 @@
-from services.store import load_all, save_all
+from store import load_all, save_all
 
 
 def admin_menu():
