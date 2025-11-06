@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "id": "112600",
+    "name": "Allen",
+    "email": "Allen@university.com",
+    "password": "Allen123",
+    "subjects": [
+      {
+        "id": "687",
+        "mark": 44,
+        "grade": "F"
+      },
+      {
+        "id": "733",
+        "mark": 32,
+        "grade": "F"
+      },
+      {
+        "id": "863",
+        "mark": 54,
+        "grade": "P"
+      }
+    ]
+  },
+  {
+    "id": "329078",
+    "name": "Larry",
+    "email": "Larry@university.com",
+    "password": "Larry123",
+    "subjects": [
+      {
+        "id": "833",
+        "mark": 57,
+        "grade": "P"
+      },
+      {
+        "id": "561",
+        "mark": 96,
+        "grade": "HD"
+      }
+    ]
+  },
+  {
+    "id": "885083",
+    "name": "Patty",
+    "email": "Patty@university.com",
+    "password": "Patty123",
+    "subjects": [
+      {
+        "id": "339",
+        "mark": 26,
+        "grade": "F"
+      },
+      {
+        "id": "984",
+        "mark": 59,
+        "grade": "P"
+      }
+    ]
+  },
+  {
+    "id": "852718",
+    "name": "Molly",
+    "email": "Molly@university.com",
+    "password": "Molly123",
+    "subjects": [
+      {
+        "id": "966",
+        "mark": 68,
+        "grade": "C"
+      },
+      {
+        "id": "544",
+        "mark": 39,
+        "grade": "F"
+      },
+      {
+        "id": "100",
+        "mark": 90,
+        "grade": "HD"
+      }
+    ]
+  }
+]
